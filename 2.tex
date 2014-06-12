@@ -1,0 +1,34 @@
+\documentclass[a4paper,12pt,leqno]{article}
+
+\usepackage{amsmath}
+
+\begin{document}
+
+\begin{equation} \label{eq}
+\begin{split}
+	\Pr(F(\tau))
+	\propto
+	\sum_{i=4}^{12} \left(
+		\prod_{j=1}^{i} \left(
+			\int_{0}^{5} F(\tau)e^{-F(\tau)t_j}dt_j
+		\right)
+		\prod_{k=i+1}^{12} \left(
+			\int_{5}^{\infty} F(\tau) e^{-F(\tau)t_k}dt_k
+		\right)
+		C_{12}^i
+	\right)
+	\propto \\
+	\propto
+	\sum_{i=4}^{12} \left(
+		-e^{-1/2}+1
+	\right)^i
+	\left(
+		e^{-1/2}
+	\right)^{12-i} C_{12}^i \approx 0.7605,
+	%
+	\qquad \forall \tau \ne \overline{\tau}  \raisetag{-0pt}
+\end{split}
+\end{equation}
+
+
+\end{document}
