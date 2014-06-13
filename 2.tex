@@ -1,11 +1,12 @@
 \documentclass[a4paper,12pt,leqno]{article}
 
+\usepackage[left=2cm,right=2cm]{geometry}
+% нужно изменить стандартные поля, иначе сноска не влазит
 \usepackage{amsmath}
 
 \begin{document}
 
-\begin{equation} \label{eq}
-\begin{split}
+\begin{align}
 	\Pr(F(\tau))
 	\propto
 	\sum_{i=4}^{12} \left(
@@ -26,9 +27,7 @@
 		e^{-1/2}
 	\right)^{12-i} C_{12}^i \approx 0.7605,
 	%
-	\qquad \forall \tau \ne \overline{\tau}  \raisetag{-0pt}
-\end{split}
-\end{equation}
-
+	\qquad \forall \tau \ne \overline{\tau} \nonumber
+\end{align}
 
 \end{document}
